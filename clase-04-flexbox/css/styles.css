@@ -1,44 +1,37 @@
-/* <----- Reactive media queries example ------>  */
+/* 1<----- Reactive media queries example ------>  */
 
 /* body {
   background-color: yellow;
 }
-h1 {
-  font-size: 50px;
+
+.mobile-text {
+  font-size: 90px;
   color: blue;
 }
+
+.other-text {
+  display: none;
+}
+
 @media screen and (min-width: 850px) {
   body {
     background-color: blue;
   }
-  h1 {
+
+  .mobile-text {
+    display: none;
+  }
+
+  .other-text {
+    display: block;
     color: yellow;
     font-size: 90px;
   }
 } */
 
-/* <----- End of reactive media queries example ------> */
+/*1 <----- End of reactive media queries example ------> */
 
-/* <----- CSS Flexbox example ------> */
-
-/* .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: red;
-}
-
-.flex-container > div {
-  width: 100px;
-  padding: 50px 10px;
-  margin: 10px;
-  font-size: 30px;
-  text-align: center;
-  background-color: blue;
-} */
-
-/* <----- End of CSS Flexbox example ------> */
-
-/* <----- CSS Flexbox properties example ------> */
+/* 2<----- CSS Flexbox properties example ------> */
 
 /* .flex-container {
   display: flex;
@@ -60,4 +53,56 @@ h1 {
   background-color: blue;
 } */
 
-/* <----- End of CSS Flexbox properties example ------> */
+/* 2<----- End of CSS Flexbox properties example ------> */
+
+/* 2.1<----- CSS Flexbox example child flex------> */
+
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: red;
+  height: 550px;
+}
+
+.flex-container > div {
+  flex:1;
+
+  height: 30px;
+  padding: 50px 10px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: blue;
+}
+
+div .box-container-1 {
+  flex: 1;
+}
+
+div .box-container-2 {
+  flex: 1;
+} */
+
+/* 2.1<----- End of CSS Flexbox example ------> */
+
+/* 3<----- CSS Flexbox example ------> */
+
+/* .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+}
+
+.flex-container > div {
+  width: 100px;
+  padding: 50px 10px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: blue;
+} */
+
+/* 3<----- End of CSS Flexbox example ------> */
